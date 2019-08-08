@@ -1,0 +1,4 @@
+*.dcu
+*.bak
+__history/
+__recovery/
