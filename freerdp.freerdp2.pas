@@ -739,7 +739,7 @@ type
 	padding0896: array[0..Pred(896 - 837)] of UINT64; (* 837 *)
 
 	(* Client Info (Time Zone) *)
-	{ALIGN64} ClientTimeZone: ^TIME_ZONE_INFORMATION;   (* 896 *)  {$IFDEF CPU32} padding7172: UInt32; {$ENDIF}
+	{ALIGN64} ClientTimeZone: PTimeZoneInformation;   (* 896 *)  {$IFDEF CPU32} padding7172: UInt32; {$ENDIF}
 	{ALIGN64} DynamicDSTTimeZoneKeyName: PAnsiChar;     (* 897 *)  {$IFDEF CPU32} padding7180: UInt32; {$ENDIF}
 	{ALIGN64} DynamicDaylightTimeDisabled: BOOL;        (* 898 *)  {$IFDEF CPU32} padding7188: UInt32; {$ENDIF}
 	padding0960: array[0..Pred(960 - 899)] of UInt64; (* 899 *)
